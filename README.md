@@ -1,5 +1,5 @@
-# tools-collection
-#### WARNING! this is stupid and so I am, I'm just apt installing this like katoolin, except katoolin don't works anymore, katoolin3 neither (at least on my pc). So i built this and added packages that i need
+# "tools-collection" _that i've been using and to be used_
+#### WARNING! this is half-stupid and so I was, I'm just apt installing things like katoolin, except katoolin don't works anymore, katoolin3 neither (at least on my pc). So i built this and added packages that i need
 
 Tested on Lubuntu, might damages other idk<br>
 this'll add repos to sources.list & installs packages<br>
@@ -15,4 +15,4 @@ cd tools-collection
 chmod +x install-tools.sh
 ```
 
-Enjoy!
+Take your risk and Enjoy!
