@@ -1,7 +1,78 @@
+#!/bin/bash
 wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
-
 echo "# Kali linux and its old repositories | Added Manually by kblk's script, delete Manually please before update and upgrade" >> /etc/apt/sources.list
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 echo "deb http://old.kali.org/kali sana main non-free contrib" >> /etc/apt/sources.list
-
-apt install -y -m -f acccheck; apt install -y -m -f ace-voip; apt install -y -m -f amap; apt install -y -m -f automater; apt install -y -m -f braa; apt install -y -m -f casefile; apt install -y -m -f cdpsnarf; apt install -y -m -f cisco-torch; apt install -y -m -f cookie-cadger; apt install -y -m -f copy-router-config; apt install -y -m -f dmitry; apt install -y -m -f dnmap; apt install -y -m -f dnsenum; apt install -y -m -f dnsmap; apt install -y -m -f dnsrecon; apt install -y -m -f dnstracer; apt install -y -m -f dnswalk; apt install -y -m -f dotdotpwn; apt install -y -m -f enum4linux; apt install -y -m -f enumiax; apt install -y -m -f exploitdb; apt install -y -m -f fierce; apt install -y -m -f firewalk; apt install -y -m -f fragroute; apt install -y -m -f fragrouter; apt install -y -m -f ghost-phisher; apt install -y -m -f golismero; apt install -y -m -f goofile; apt install -y -m -f lbd; apt install -y -m -f maltego-teeth; apt install -y -m -f masscan; apt install -y -m -f metagoofil; apt install -y -m -f miranda; apt install -y -m -f nmap; apt install -y -m -f p0f; apt install -y -m -f parsero; apt install -y -m -f recon-ng; apt install -y -m -f set; apt install -y -m -f smtp-user-enum; apt install -y -m -f snmpcheck; apt install -y -m -f sslcaudit; apt install -y -m -f sslsplit; apt install -y -m -f sslstrip; apt install -y -m -f sslyze; apt install -y -m -f thc-ipv6; apt install -y -m -f theharvester; apt install -y -m -f tlssled; apt install -y -m -f twofi; apt install -y -m -f urlcrazy; apt install -y -m -f wireshark; apt install -y -m -f wireshark-qt; apt install -y -m -f wol-e; apt install -y -m -f xplico; apt install -y -m -f ismtp; apt install -y -m -f intrace; apt install -y -m -f hping3; apt install -y -m -f bbqsql; apt install -y -m -f bed; apt install -y -m -f cisco-auditing-tool; apt install -y -m -f cisco-global-exploiter; apt install -y -m -f cisco-ocs; apt install -y -m -f cisco-torch; apt install -y -m -f copy-router-config; apt install -y -m -f doona; apt install -y -m -f dotdotpwn; apt install -y -m -f greenbone-security-assistant; apt install -y -m -f hexorbase; apt install -y -m -f jsql; apt install -y -m -f lynis; apt install -y -m -f nmap; apt install -y -m -f ohrwurm; apt install -y -m -f openvas-cli; apt install -y -m -f openvas-manager; apt install -y -m -f openvas-scanner; apt install -y -m -f oscanner; apt install -y -m -f powerfuzzer; apt install -y -m -f sfuzz; apt install -y -m -f sidguesser; apt install -y -m -f siparmyknife; apt install -y -m -f sqlmap; apt install -y -m -f sqlninja; apt install -y -m -f sqlsus; apt install -y -m -f thc-ipv6; apt install -y -m -f tnscmd10g; apt install -y -m -f unix-privesc-check; apt install -y -m -f yersinia; apt install -y -m -f aircrack-ng; apt install -y -m -f asleap; apt install -y -m -f bluelog; apt install -y -m -f blueranger; apt install -y -m -f bluesnarfer; apt install -y -m -f bully; apt install -y -m -f cowpatty; apt install -y -m -f crackle; apt install -y -m -f eapmd5pass; apt install -y -m -f fern-wifi-cracker; apt install -y -m -f ghost-phisher; apt install -y -m -f giskismet; apt install -y -m -f gqrx; apt install -y -m -f kalibrate-rtl; apt install -y -m -f killerbee; apt install -y -m -f kismet; apt install -y -m -f mdk3; apt install -y -m -f mfcuk; apt install -y -m -f mfoc; apt install -y -m -f mfterm; apt install -y -m -f multimon-ng; apt install -y -m -f pixiewps; apt install -y -m -f reaver; apt install -y -m -f redfang; apt install -y -m -f spooftooph; apt install -y -m -f wifi-honey; apt install -y -m -f wifitap; apt install -y -m -f wifite; apt install -y -m -f apache-users; apt install -y -m -f arachni; apt install -y -m -f bbqsql; apt install -y -m -f blindelephant; apt install -y -m -f burpsuite; apt install -y -m -f cutycapt; apt install -y -m -f davtest; apt install -y -m -f deblaze; apt install -y -m -f dirb; apt install -y -m -f dirbuster; apt install -y -m -f fimap; apt install -y -m -f funkload; apt install -y -m -f grabber; apt install -y -m -f jboss-autopwn; apt install -y -m -f joomscan; apt install -y -m -f jsql; apt install -y -m -f maltego-teeth; apt install -y -m -f padbuster; apt install -y -m -f paros; apt install -y -m -f parsero; apt install -y -m -f plecost; apt install -y -m -f powerfuzzer; apt install -y -m -f proxystrike; apt install -y -m -f recon-ng; apt install -y -m -f skipfish; apt install -y -m -f sqlmap; apt install -y -m -f sqlninja; apt install -y -m -f sqlsus; apt install -y -m -f ua-tester; apt install -y -m -f uniscan; apt install -y -m -f vega; apt install -y -m -f w3af; apt install -y -m -f webscarab; apt install -y -m -f websploit; apt install -y -m -f wfuzz; apt install -y -m -f wpscan; apt install -y -m -f xsser; apt install -y -m -f zaproxy; apt install -y -m -f burpsuite; apt install -y -m -f dnschef; apt install -y -m -f fiked; apt install -y -m -f hamster-sidejack; apt install -y -m -f hexinject; apt install -y -m -f iaxflood; apt install -y -m -f inviteflood; apt install -y -m -f ismtp; apt install -y -m -f mitmproxy; apt install -y -m -f ohrwurm; apt install -y -m -f protos-sip; apt install -y -m -f rebind; apt install -y -m -f responder; apt install -y -m -f rtpbreak; apt install -y -m -f rtpinsertsound; apt install -y -m -f rtpmixsound; apt install -y -m -f sctpscan; apt install -y -m -f siparmyknife; apt install -y -m -f sipp; apt install -y -m -f sipvicious; apt install -y -m -f sniffjoke; apt install -y -m -f sslsplit; apt install -y -m -f sslstrip; apt install -y -m -f thc-ipv6; apt install -y -m -f voiphopper; apt install -y -m -f webscarab; apt install -y -m -f wifi-honey; apt install -y -m -f wireshark; apt install -y -m -f xspy; apt install -y -m -f yersinia; apt install -y -m -f zaproxy; apt install -y -m -f cryptcat; apt install -y -m -f cymothoa; apt install -y -m -f dbd; apt install -y -m -f dns2tcp; apt install -y -m -f http-tunnel; apt install -y -m -f httptunnel; apt install -y -m -f intersect; apt install -y -m -f nishang; apt install -y -m -f polenum; apt install -y -m -f powersploit; apt install -y -m -f pwnat; apt install -y -m -f ridenum; apt install -y -m -f sbd; apt install -y -m -f u3-pwn; apt install -y -m -f webshells; apt install -y -m -f weevely; apt install -y -m -f casefile; apt install -y -m -f cutycapt; apt install -y -m -f dos2unix; apt install -y -m -f dradis; apt install -y -m -f keepnote; apt install -y -m -f magictree; apt install -y -m -f metagoofil; apt install -y -m -f nipper-ng; apt install -y -m -f pipal; apt install -y -m -f armitage; apt install -y -m -f backdoor-factory; apt install -y -m -f cisco-auditing-tool; apt install -y -m -f cisco-global-exploiter; apt install -y -m -f cisco-ocs; apt install -y -m -f cisco-torch; apt install -y -m -f crackle; apt install -y -m -f jboss-autopwn; apt install -y -m -f linux-exploit-suggester; apt install -y -m -f maltego-teeth; apt install -y -m -f set; apt install -y -m -f shellnoob; apt install -y -m -f sqlmap; apt install -y -m -f thc-ipv6; apt install -y -m -f yersinia; apt install -y -m -f beef-xss; apt install -y -m -f binwalk; apt install -y -m -f bulk-extractor; apt install -y -m -f chntpw; apt install -y -m -f cuckoo; apt install -y -m -f dc3dd; apt install -y -m -f ddrescue; apt install -y -m -f dumpzilla; apt install -y -m -f extundelete; apt install -y -m -f foremost; apt install -y -m -f galleta; apt install -y -m -f guymager; apt install -y -m -f iphone-backup-analyzer; apt install -y -m -f p0f; apt install -y -m -f pdf-parser; apt install -y -m -f pdfid; apt install -y -m -f pdgmail; apt install -y -m -f peepdf; apt install -y -m -f volatility; apt install -y -m -f xplico; apt install -y -m -f dhcpig; apt install -y -m -f funkload; apt install -y -m -f iaxflood; apt install -y -m -f inviteflood; apt install -y -m -f ipv6-toolkit; apt install -y -m -f mdk3; apt install -y -m -f reaver; apt install -y -m -f rtpflood; apt install -y -m -f slowhttptest; apt install -y -m -f t50; apt install -y -m -f termineter; apt install -y -m -f thc-ipv6; apt install -y -m -f thc-ssl-dos; apt install -y -m -f acccheck; apt install -y -m -f burpsuite; apt install -y -m -f cewl; apt install -y -m -f chntpw; apt install -y -m -f cisco-auditing-tool; apt install -y -m -f cmospwd; apt install -y -m -f creddump; apt install -y -m -f crunch; apt install -y -m -f findmyhash; apt install -y -m -f gpp-decrypt; apt install -y -m -f hash-identifier; apt install -y -m -f hexorbase; apt install -y -m -f john; apt install -y -m -f johnny; apt install -y -m -f keimpx; apt install -y -m -f maltego-teeth; apt install -y -m -f maskprocessor; apt install -y -m -f multiforcer; apt install -y -m -f ncrack; apt install -y -m -f oclgausscrack; apt install -y -m -f pack; apt install -y -m -f patator; apt install -y -m -f polenum; apt install -y -m -f rainbowcrack; apt install -y -m -f rcracki-mt; apt install -y -m -f rsmangler; apt install -y -m -f statsprocessor; apt install -y -m -f thc-pptp-bruter; apt install -y -m -f truecrack; apt install -y -m -f webscarab; apt install -y -m -f wordlists; apt install -y -m -f zaproxy; apt install -y -m -f apktool; apt install -y -m -f dex2jar; apt install -y -m -f python-distorm3; apt install -y -m -f edb-debugger; apt install -y -m -f jad; apt install -y -m -f javasnoop; apt install -y -m -f jd; apt install -y -m -f ollydbg; apt install -y -m -f smali; apt install -y -m -f valgrind; apt install -y -m -f yara; apt install -y -m -f android-sdk; apt install -y -m -f apktool; apt install -y -m -f arduino; apt install -y -m -f dex2jar; apt install -y -m -f sakis3g; apt install -y -m -f smali;
+apt --fix-broken install -y  aircrack-ng
+apt --fix-broken install -y  apktool
+apt --fix-broken install -y  apparmor
+apt --fix-broken install -y  armitage
+apt --fix-broken install -y  automater
+apt --fix-broken install -y  autopsy
+apt --fix-broken install -y  backdoor-factory
+apt --fix-broken install -y  bettercap
+apt --fix-broken install -y  binwalk
+apt --fix-broken install -y  burpsuite
+apt --fix-broken install -y  cowpatty
+apt --fix-broken install -y  crunch
+apt --fix-broken install -y  dhcpd
+apt --fix-broken install -y  dirb
+apt --fix-broken install -y  dnsmap
+apt --fix-broken install -y  dsniff
+apt --fix-broken install -y  fierce
+apt --fix-broken install -y  foxyproxy
+apt --fix-broken install -y  fping
+apt --fix-broken install -y  fragroute
+apt --fix-broken install -y  fragrouter
+apt --fix-broken install -y  git
+apt --fix-broken install -y  gobuster
+apt --fix-broken install -y  gparted
+apt --fix-broken install -y  grub-customizer
+apt --fix-broken install -y  hashcat    
+apt --fix-broken install -y  hostapd
+apt --fix-broken install -y  httrack
+apt --fix-broken install -y  hydra
+apt --fix-broken install -y  john
+apt --fix-broken install -y  joomscan
+apt --fix-broken install -y  jsql
+apt --fix-broken install -y  lighttpd
+apt --fix-broken install -y  lynis
+apt --fix-broken install -y  macchanger
+apt --fix-broken install -y  maltegoce
+apt --fix-broken install -y  metasploit-framework
+apt --fix-broken install -y  nessus
+apt --fix-broken install -y  netcat
+apt --fix-broken install -y  netdiscover
+apt --fix-broken install -y  netmask
+apt --fix-broken install -y  nikto
+apt --fix-broken install -y  nmap
+apt --fix-broken install -y  php-cgi
+apt --fix-broken install -y  powersploit
+apt --fix-broken install -y  proxychains
+apt --fix-broken install -y  pwgen
+apt --fix-broken install -y  python2
+apt --fix-broken install -y  recon-ng
+apt --fix-broken install -y  rfcat
+apt --fix-broken install -y  sakis3g
+apt --fix-broken install -y  skipfish
+apt --fix-broken install -y  smbmap
+apt --fix-broken install -y  snort
+apt --fix-broken install -y  sqlmap
+apt --fix-broken install -y  sslscan
+apt --fix-broken install -y  steghide
+apt --fix-broken install -y  theHarvester
+apt --fix-broken install -y  traceroute
+apt --fix-broken install -y  whatweb
+apt --fix-broken install -y  whois
+apt --fix-broken install -y  wifite
+apt --fix-broken install -y  wireshark
+apt --fix-broken install -y  wpscan
+apt --fix-broken install -y  xterm
+apt --fix-broken install -y  yersinia
+apt install python python2 python3 python3-pip git -y
+python3 -m pip install ciphey --upgrade
+cd /opt; git clone https://github.com/SecureAuthCorp/impacket; python3 -m pip install .;
+cd /opt; git clone https://github.com/wuseman/emagnet; chmod +x emagnet/emagnet.sh;
+cd /opt; git clone https://www.github.com/FluxionNetwork/fluxion.git; chmod +x fluxion/fluxion.sh;
+cd /opt; git clone https://github.com/rebootuser/LinEnum; chmod +x LinEnum/LinEnum.sh;
+cd /opt; git clone https://github.com/LimerBoy/Impulse; cd Impulse/; pip3 install -r requirements.txt;
