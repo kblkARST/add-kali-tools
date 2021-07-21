@@ -13,6 +13,7 @@ sudo su
 git clone https://github.com/kblkARST/tools-collection.git
 cd tools-collection
 chmod +x install-tools.sh
+./install-tools.sh
 ```
 
 Take your risk and Enjoy!<br><br><br><br><br><br><br><br>
