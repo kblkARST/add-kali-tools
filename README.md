@@ -1,5 +1,7 @@
 # tools-collection
-#### warning! this is stupid, im just apt installing this like katoolin, except katoolin don't works, at least on my pc. so i built this and added packages that i need
+#### WARNING! this is stupid and so I am, I'm just apt installing this like katoolin, except katoolin don't works anymore neither katoolin2, at least on my pc. so i built this and added packages that i need
+
+Tested on Lubuntu, might damages other idk<br>
 this'll add repos to sources.list & installs packages<br>
 I'm a newbie linux user please don't blame me if anything went wrong on your device<br>
 im just doing my things and shared this to a friend<br>
