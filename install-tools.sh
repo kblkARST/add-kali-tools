@@ -1,8 +1,25 @@
 #!/bin/bash
+echo '
+
+┬┌─┌┐ ┬  ┬┌─   ╔═╗┌─┐┬  ┬  ┌─┐┌─┐┌┬┐┬┌─┐┌┐┌┌─┐
+├┴┐├┴┐│  ├┴┐───║  │ ││  │  ├┤ │   │ ││ ││││└─┐
+┴ ┴└─┘┴─┘┴ ┴   ╚═╝└─┘┴─┘┴─┘└─┘└─┘ ┴ ┴└─┘┘└┘└─┘
+
+'
+if [ "$EUID" -ne 0 ]
+  then echo "Sorry $EUID,Please run as root"
+  exit
+fi
+read -p "Install tools? (Y/n)" -n 1 -r
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit
+fi
 wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 echo "# Kali linux and its old repositories | Added Manually by kblk's script, delete Manually please before update and upgrade" >> /etc/apt/sources.list
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 echo "deb http://old.kali.org/kali sana main non-free contrib" >> /etc/apt/sources.list
+apt-get update
 apt --fix-broken install -y  aircrack-ng
 apt --fix-broken install -y  apktool
 apt --fix-broken install -y  apparmor
