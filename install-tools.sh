@@ -84,9 +84,6 @@ apt --fix-broken install -y  wpscan
 apt --fix-broken install -y  xterm
 apt --fix-broken install -y  yersinia
 apt install python python2 python3 python3-pip git -y
-cd /additional-packages
-apt install Nessus-8.15.0-debian6_amd64.deb -y
-cd ..
 python3 -m pip install ciphey --upgrade
 cd /opt; git clone https://github.com/SecureAuthCorp/impacket; python3 -m pip install .;
 cd /opt; git clone https://github.com/wuseman/emagnet; chmod +x emagnet/emagnet.sh;
