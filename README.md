@@ -1,4 +1,4 @@
-# tools-collections
+# tools-collection
 #### warning! this is stupid, im just apt installing this like katoolin, except katoolin don't works, at least on my pc. so i built this and added packages that i need
 this'll add repos to sources.list & installs packages<br>
 I'm a newbie linux user please don't blame me if anything went wrong on your device<br>
