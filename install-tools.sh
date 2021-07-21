@@ -19,12 +19,11 @@ wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 echo "# Kali linux and its old repositories | Added Manually by kblk's script, delete Manually please before update and upgrade" >> /etc/apt/sources.list
 echo "deb http://http.kali.org/kali kali-rolling main contrib non-free" >> /etc/apt/sources.list
 echo "deb http://old.kali.org/kali sana main non-free contrib" >> /etc/apt/sources.list
-apt-get update
+apt-get update --allow-insecure-repositories
 apt --fix-broken install -y  aircrack-ng
 apt --fix-broken install -y  apktool
 apt --fix-broken install -y  apparmor
 apt --fix-broken install -y  armitage
-apt --fix-broken install -y  automater
 apt --fix-broken install -y  autopsy
 apt --fix-broken install -y  backdoor-factory
 apt --fix-broken install -y  bettercap
@@ -41,7 +40,6 @@ apt --fix-broken install -y  foxyproxy
 apt --fix-broken install -y  fping
 apt --fix-broken install -y  fragroute
 apt --fix-broken install -y  fragrouter
-apt --fix-broken install -y  git
 apt --fix-broken install -y  gobuster
 apt --fix-broken install -y  gparted
 apt --fix-broken install -y  grub-customizer
@@ -57,7 +55,6 @@ apt --fix-broken install -y  lynis
 apt --fix-broken install -y  macchanger
 apt --fix-broken install -y  maltegoce
 apt --fix-broken install -y  metasploit-framework
-apt --fix-broken install -y  nessus
 apt --fix-broken install -y  netcat
 apt --fix-broken install -y  netdiscover
 apt --fix-broken install -y  netmask
@@ -77,7 +74,7 @@ apt --fix-broken install -y  snort
 apt --fix-broken install -y  sqlmap
 apt --fix-broken install -y  sslscan
 apt --fix-broken install -y  steghide
-apt --fix-broken install -y  theHarvester
+apt --fix-broken install -y  theharvester
 apt --fix-broken install -y  traceroute
 apt --fix-broken install -y  whatweb
 apt --fix-broken install -y  whois
@@ -87,6 +84,9 @@ apt --fix-broken install -y  wpscan
 apt --fix-broken install -y  xterm
 apt --fix-broken install -y  yersinia
 apt install python python2 python3 python3-pip git -y
+cd /additional-packages
+apt install Nessus-8.15.0-debian6_amd64.deb -y
+cd ..
 python3 -m pip install ciphey --upgrade
 cd /opt; git clone https://github.com/SecureAuthCorp/impacket; python3 -m pip install .;
 cd /opt; git clone https://github.com/wuseman/emagnet; chmod +x emagnet/emagnet.sh;
