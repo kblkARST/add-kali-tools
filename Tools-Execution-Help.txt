@@ -14,7 +14,6 @@ How to use the tools
  sakis3g skipfish smbmap snort sqlmap sslscan
  steghide theHarvester traceroute whatweb whois
  wifite wireshark wpscan xterm yersinia ciphey
- emagnet
 
 [Extra Steps]
 [apparmor]
