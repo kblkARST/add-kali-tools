@@ -1,7 +1,7 @@
 # "tools-collection" _that i've been using and to be used_
-#### WARNING! this is half-stupid and so was I<br>I'm just apt installing things like katoolin, except katoolin don't works anymore, katoolin3 neither (at least on my pc). So i built this and added packages that i need, i just want a linux tools to be available on my select linux distros
+#### WARNING! this is half-stupid and so was I<br>I'm just apt installing things like katoolin, except it won't works anymore, katoolin3 neither (at least on my pc). So i built this and added packages that i need, i just want these linux tools to be available on my select distros
 
-**Tested on Lubuntu ethernet connected**, might damage other idk<br>
+**Tested on eth-wlan connected Lubuntu**, might damage other idk<br>
 this'll add repos to sources.list & installs packages<br>
 I'm a newbie linux user on learning phase<br> so... something might went wrong on your device (so far so good on my VM tho)<br>
 *any assistance and corrections would be nice!*<br>
@@ -10,7 +10,7 @@ im just doing studying and shared this to friends around<br>
 ## Usage:
 ```
 sudo su
-git clone https://github.com/kblkARST/tools-collection.git
+git clone https://github.com/kblkLab/tools-collection.git
 cd tools-collection
 chmod +x install-tools.sh
 ./install-tools.sh
