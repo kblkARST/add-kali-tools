@@ -3,14 +3,14 @@ How to use the tools
 [Call Normally via Terminal:]
  aircrack-ng apktool armitage autopsy
  backdoor-factory bettercap binwalk
- burpsuite cowpatty crunch dhcpd dirb
+ bully burpsuite cowpatty crunch dhcpd dirb
  dnsmap dsniff fierce foxyproxy fping
  fragroute fragrouter gobuster gparted
- grub-customizer hashcat hostapd httrack
- hydra john joomscan jsql lighttpd lynis
- macchanger maltegoce netcat netdiscover
- netmask nikto nmap php-cgi powersploit
- proxychains pwgen python2 recon-ng rfcat
+ grub-customizer hashcat hcxdumptool hcxpcaptool
+ hostapd httrack hydra john joomscan jsql
+ lighttpd lynis macchanger maltegoce netcat
+ netdiscover netmask nikto nmap php-cgi powersploit
+ proxychains pwgen pyrit python2 recon-ng rfcat
  sakis3g skipfish smbmap snort sqlmap sslscan
  steghide theHarvester traceroute whatweb whois
  wifite wireshark wpscan xterm yersinia ciphey
