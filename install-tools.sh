@@ -28,6 +28,7 @@ apt --fix-broken install -y  autopsy
 apt --fix-broken install -y  backdoor-factory
 apt --fix-broken install -y  bettercap
 apt --fix-broken install -y  binwalk
+apt --fix-broken install -y  bully
 apt --fix-broken install -y  burpsuite
 apt --fix-broken install -y  cowpatty
 apt --fix-broken install -y  crunch
@@ -43,7 +44,9 @@ apt --fix-broken install -y  fragrouter
 apt --fix-broken install -y  gobuster
 apt --fix-broken install -y  gparted
 apt --fix-broken install -y  grub-customizer
-apt --fix-broken install -y  hashcat    
+apt --fix-broken install -y  hashcat
+apt --fix-broken install -y  hcxdumptool
+apt --fix-broken install -y  hcxtools
 apt --fix-broken install -y  hostapd
 apt --fix-broken install -y  httrack
 apt --fix-broken install -y  hydra
@@ -64,6 +67,7 @@ apt --fix-broken install -y  php-cgi
 apt --fix-broken install -y  powersploit
 apt --fix-broken install -y  proxychains
 apt --fix-broken install -y  pwgen
+apt --fix-broken install -y  pyrit
 apt --fix-broken install -y  python2
 apt --fix-broken install -y  recon-ng
 apt --fix-broken install -y  rfcat
@@ -83,6 +87,7 @@ apt --fix-broken install -y  wireshark
 apt --fix-broken install -y  wpscan
 apt --fix-broken install -y  xterm
 apt --fix-broken install -y  yersinia
+apt-get -y install build-essential libpcap-dev aircrack-ng pixiewps
 apt install python python2 python3 python3-pip git -y
 python3 -m pip install ciphey --upgrade
 cd /opt; git clone https://github.com/SecureAuthCorp/impacket; python3 -m pip install .;
