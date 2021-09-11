@@ -14,19 +14,11 @@ How to use the tools
  sakis3g skipfish smbmap snort sqlmap sslscan
  steghide theHarvester traceroute whatweb whois
  wifite wireshark wpscan xterm yersinia ciphey
-
-[Extra Steps]
-[apparmor]
- systemctl start apparmor
  
 [metasploit-framework]
  msfdb init
  msfdb start
  msfconsole
- 
-[impacket]
- just go to https://github.com/SecureAuthCorp/impacket
- it's a pack of python classes
  
 [emagnet]
  cd /opt/emagnet
